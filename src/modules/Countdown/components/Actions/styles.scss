@@ -1,0 +1,22 @@
+.actions {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  .button {
+    height: 53px;
+    width: 53px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid rgb(163, 175, 251);
+    fill: rgb(163, 175, 251);
+    cursor: pointer;
+
+    &.disabled {
+      fill: rgb(163, 175, 251, .3);
+      border: 1px solid rgb(163, 175, 251, .3);
+      cursor: unset;
+    }
+  }
+}
